@@ -2,37 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IndexEJS file</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IndexEJS file</title>
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-
 <body>
-    <div>
-     <div class="mb-3 row">
-  <label for="staticEmail" class="col-sm-2 col-form-label">Username</label>
-  <div class="col-sm-10">
-    <input type="text" readonly class="form-control-plaintext" id="uid" name="username" placeholder="username">
+  <div class="w-full h-screen bg-zinc-900">
+   <H3>Create a User</H3>
+    <form class="text-white" method="post" action="/create" >
+    <input class="px-3 py-2 rounded-md bg-transparent border-2"type="text" placeholder="username" name="username" >
+    <input class="px-3 py-2 rounded-md bg-transparent border-2"type="email" placeholder="email" name="email">
+    <input class="px-3 py-2 rounded-md bg-transparent border-2"type="password" placeholder="password" name="password">
+    <input class="px-3 py-2 rounded-md bg-transparent border-2"type="number" placeholder="age" name="age">
+    <input class="px-3 py-2 rounded-md bg-transparent border-2"type="submit" value="Create User"> 
+  </form>
+   class="px-3 py-2 rounded-md bg-transparent border-2"
   </div>
-</div>
-     <div class="mb-3 row">
-  <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-  <div class="col-sm-10">
-    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com" name="useremail">
-  </div>
-</div>
-<div class="mb-3 row">
-  <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-  <div class="col-sm-10">
-    <input type="password" class="form-control" id="inputPassword" name="userpassword">
-  </div>
-</div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
