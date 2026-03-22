@@ -29,7 +29,7 @@ app.post("/create", function (req, res) {
                 password: hash,
                 age
             })
-
+            
             let token = jwt.sign({ email }, "secret");
             res.cookie("token", token);
             res.send(createdUser)
